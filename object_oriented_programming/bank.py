@@ -23,7 +23,7 @@ bankaccount1 = BankAccount(0,"Jerry")
 bankaccount1.get_balance()
 bankaccount1.deposit(1000)
 bankaccount1.withdraw(500)
-print(bankaccount1.owner_name)
+print(f"{bankaccount1.owner_name}'s final Balance: ${bankaccount1.balance}")
 
 
 
