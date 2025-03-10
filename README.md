@@ -1,3 +1,3 @@
-#Leet Code
+# Leet Code
 
-##A collection of problems I have solved.
+## A collection of problems I have solved.
