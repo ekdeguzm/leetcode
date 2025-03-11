@@ -19,9 +19,8 @@ class Solution:
 solution = Solution()
 
 haystack = "hello"
-
 needle = "ll"
 
 result = solution.strStr(haystack, needle)
 
-print(result)
+print(f"The needle begins on the idex of {result}.")
