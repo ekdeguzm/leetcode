@@ -4,23 +4,25 @@ from typing import List
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
 
-        count = {}
+        # create dictionary
+        count = dict()
 
+        # interate through nums and get the number
         for num in nums:
-            if num in count:
-                count[num] += 1
+            if num in count:                # if number is in dictionary
+                count[num] += 1             # add 1 to the value of it
             else:
-                count[num] = 1
+                count[num] = 1              # begin it
 
-            max_count = -1
-            ans = -1
+            max_count = -1                  # initialize max_count
+            ans = -1                        # initialize ans
 
-            for key, val in count.items():
+            for key, val in count.items():   # iterate through dictionary
                 if val > max_count:
-                    max_count = val
-                    ans = key
+                    max_count = val         # set the new highest max_count
+                    ans = key               # key is the ans
 
-        return ans
+        return ans                          # return that value
 
 
 solution = Solution()
