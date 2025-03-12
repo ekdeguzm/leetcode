@@ -21,7 +21,7 @@ class Solution:
 
 solution = Solution()
 
-s = "  fly me   to  the moon  "
+s = "  fly me   to  the camels  "
 
 result = solution.lengthOfLastWord(s)
 

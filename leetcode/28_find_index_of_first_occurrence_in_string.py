@@ -18,9 +18,9 @@ class Solution:
 
 solution = Solution()
 
-haystack = "hello"
-needle = "ll"
+haystack = "puffer fishes"
+needle = "hes"
 
 result = solution.strStr(haystack, needle)
 
-print(f"The needle begins on the idex of {result}.")
+print(f"The needle begins on the index of {result}.")
