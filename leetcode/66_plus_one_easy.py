@@ -23,3 +23,5 @@ digits = [1, 2, 9, 9]
 result = solution.plusOne(digits)
 
 print(result)
+
+print(8//2)
