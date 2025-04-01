@@ -1,23 +1,19 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        n = len(s)
-        L = 0
-        R = n - 1
+        filtered_string = ""
 
-        while L < R:
-            if not s[L].isalnum():
-                L += 1
-                continue
+        for char in s:
+            if char.isalnum():
 
-            if not s[R].isalnum():
-                R -= 1
-                continue
+                filtered_string += char.lower()
 
-            if s[L].lower() != s[R].lower():
+        left = 0
+        right = len(filtered_string) - 1
+        while left < right:
+            if filtered_string[left] != filtered_string[right]:
                 return False
-
-            L += 1
-            R -= 1
+            left += 1
+            right -= 1
 
         return True
 
